@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilos -->
     <link rel="stylesheet" href="estilos.css">
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/bd87dd8657.js" crossorigin="anonymous"></script>
     <title>My CV</title>
 </head>
 
 <body>
+
+    <!-- PRUEBA -->
 
     <div class="contact-line"></div>
     <div>
@@ -16,13 +21,14 @@
         <div class="instagram"></div>
         <div class="instagram"></div>
     </div>
-
+    
+    <!-- PRUEBA -->
+    
     <header>
-        <nav class="header-nav">
-            <ul class="header-ul">
+        <nav class="header-nav"> <ul class="header-ul">
                 <li><a class="header-a" href="#direccion1">Acerca de</a></li>
-                <li><a class="header-a" href="#proyectos">Proyectos</a></li>
-                <li><a class="header-a" href="C:/Users/fedem/Desktop/mi%20cv%20paa/federico-maccio-cv-converted.pdf">Curriculum</a></li>
+                <li><a class="header-a" href="#direct2">Proyectos</a></li>
+                <li><a class="header-a" href="#">Contactame</a></li>
             </ul>
         </nav>
 
@@ -36,20 +42,45 @@
                 </ul>
             </div>
         </div>
-
-        <img class="img" id="direccion1" src="img/line.jpg" alt="">
     </header>
+    
+    <div class="container-img">
+        <img class="img" id="direccion1" src="img/line.jpg" alt="">
+    </div>
 
 
 <section id="acercade">
-    <div class="section-acercade">
-        <p>Acerca de mí</p>
+
+    <div class="acercade-tittle">
+        <div class="acercade-tittle-div">
+            <h2>A C E R C A<span> D E</span></h2>
+        </div>
+        <p>Soy Federico Macció, tengo 19 años y estudio actualmente desarrollo web Frontend en cursos como "Coder House" o "FreeCodeCamp", ademas estudio en paralelo "Técnico superior en programación" en la Universidad Tecnologia Nacional. Me considero muy habil para la resolución de problemas y por su lado muy ordenado. Espero le guste mis proyectos que estan despues de este apartado</p>
     </div>
-    <img class="img2" src="img/line.jpg" alt="">
+    <div class="acercade-iconos">
+        <div class="acercade-icono-1 icon"></div>
+        <div class="acercade-icono-2 icon"></div>
+        <div class="acercade-icono-3 icon"></div>
+    </div>
+
+
+
+    <!-- <div class="div-logos">
+        <div class="div-logo-1 logo-margin"></div>
+        <div class="div-logo-2 logo-margin"></div>
+        <div class="div-logo-3 logo-margin"></div>
+        <div class="div-logo-4 logo-margin"></div>
+        <div class="div-logo-5 logo-margin"></div>
+        <div class="div-logo-6 logo-margin"></div>
+    </div> -->
+
 </section>
 
+
 <section id="proyectos">
-    <div class="proyectos-container-h3">
+    <img class="img2" src="img/line.jpg" alt="">
+    
+    <div id="direct2" class="proyectos-container-h3">
         <h3>P O R T F O L I O</h3>
     </div>
     <div class="section-proyectos">
@@ -78,10 +109,77 @@
             <div class="foto6 borde"></div>
         </a>
     </div>
+
     <img class="img3" src="img/line.jpg" alt="">
 </section>
 
 
+<section id="contactame">
+
+    <div class="contactame-redes">
+            <a href="https://www.instagram.com/fede_maccio.o/" target="_blank" class="insta-direct a-general">
+                <div class="insta redes">
+                    <p>fede_maccio.o</p>
+                </div>
+            </a>
+
+            <a href="#" class="email-direct a-general">
+                <div class="email redes">
+                    <p>nogatzby@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/NogaTzBy" target="_blank" class="github-direct a-general">
+                <div class="github redes">
+                    <p>nogatzby</p>
+                </div>
+            </a>
+    </div>
+
+</section>
+
+
+<section class="contactame">
+    <img class="img4" src="img/line.jpg" alt="">
+
+
+    <!-- <form>
+        <input id="nombre" name="nombre" placeholder="Nombre completo">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+        <input id="submit" name="submit" type="submit" value="Enviar">
+    </form> -->
+
+    <form class="form">
+        <input type="text" class="form__input--1" placeholder="NOMBRE" required>
+        <input type="text" class="form__input--2" placeholder="EMAIL" required>
+    </form>
+
+
+    <!-- <form class="form">
+        <div class="form__container">
+            <h2 class="form__container--h2">Contactame</h2>
+            <input type="text" class="form__input" placeholder="NOMBRE">
+            <input type="text" class="form__input" placeholder="EMAIL">
+            <textarea class="form__input form__inpu--message" placeholder="MENSAJE"></textarea>
+
+            <input type="submit" value="Enviar" class="form__cta">
+        </div>
+    </form> -->
+
+    <img class="img5" src="img/line.jpg" alt="">
+</section>
+
+
+
+
+<footer class="footer">
+    <div class="footer-div">
+
+    </div>
+</footer>
 
 
 

@@ -9,7 +9,7 @@
 body {
   background: url(img/foto-hero.jpeg) #000;
   background-attachment: fixed;
-  height: 950px;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: right;
   font-family: "Quattrocento Sans", sans-serif;
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
-  height: 900px;
+  height: 930px;
   width: 100%;
 }
 
@@ -39,13 +39,10 @@ ul {
   list-style: none;
 }
 
-a {
-  cursor: initial;
-}
-
 .header-nav {
   width: 65%;
   height: 60px;
+  align-content: center;
 }
 
 .header-ul {
@@ -60,8 +57,7 @@ a {
   text-decoration: none;
   color: #ACACAC;
   display: inline-flex;
-  height: 60px;
-  align-items: center;
+  margin-top: 30px;
 }
 
 .header-ul li .header-a:hover {
@@ -171,28 +167,57 @@ a {
     -o-transform: translateX(120%);
   }
 }
+.container-img {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
 .img {
   width: 100%;
   position: absolute;
-  bottom: -32px;
+  bottom: 0;
   height: 100px;
   filter: invert(100%);
+}
+
+.container-img2 {
+  position: relative;
+  width: 100%;
+  height: 100px;
 }
 
 .img2 {
   width: 100%;
   position: absolute;
-  bottom: -100px;
+  top: 0;
   height: 100px;
   transform: scaleY(-1);
   filter: invert(100%);
-  z-index: 100;
+  z-index: 150;
 }
 
 .img3 {
   width: 100%;
   position: absolute;
-  bottom: -18.4px;
+  bottom: 0;
+  height: 100px;
+  filter: invert(100%);
+}
+
+.img4 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100px;
+  transform: scaleY(-1);
+  filter: invert(100%);
+}
+
+.img5 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   height: 100px;
   filter: invert(100%);
 }
@@ -200,23 +225,84 @@ a {
 #acercade {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 450px;
   background-color: #fff;
 }
 
-.section-acercade {
-  position: relative;
+.acercade-tittle {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20%;
+  text-align: center;
+  line-height: 1.5;
+  height: 60%;
 }
 
-.section-acercade p {
-  position: absolute;
+.acercade-tittle-div {
+  margin: 0 auto;
+  transition: all 0.8s;
+}
+.acercade-tittle-div:hover {
+  color: #888;
+}
+
+.acercade-tittle h2 {
+  margin-top: 30px;
+}
+
+.acercade-tittle h2 span {
+  margin-left: 10px;
+}
+
+.acercade-tittle h2, span {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.acercade-tittle p {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.acercade-iconos {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.acercade-icono-1 {
+  background-image: url(img/html-logo.svg);
+}
+
+.acercade-icono-2 {
+  background-image: url(img/css-logo.svg);
+}
+
+.acercade-icono-3 {
+  background-image: url(img/git-logo.svg);
 }
 
 #proyectos {
   position: relative;
   width: 100%;
-  height: 1000px;
+  height: 1100px;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .proyectos-container-h3 {
@@ -360,4 +446,85 @@ a {
 .section-proyectos .foto6:hover {
   filter: saturate(1);
   box-shadow: 0 0 10px 5px white;
+}
+
+#contactame {
+  width: 100%;
+  height: 170px;
+  background-color: #fff;
+  position: relative;
+}
+
+.contactame-redes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.a-general {
+  text-decoration: none;
+  color: #000;
+}
+
+.redes {
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.redes p {
+  display: flex;
+  position: relative;
+  font-weight: 600;
+  font-size: 30px;
+  top: 120px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  transition: all 0.8s;
+}
+.redes p:hover {
+  color: #888;
+}
+
+.insta-direct {
+  width: 50px;
+}
+
+.insta {
+  background-image: url(img/redes-insta.svg);
+}
+
+.email {
+  background-image: url(img/redes-email.svg);
+  text-align: center;
+}
+
+.github {
+  background-image: url(img/redes-github.svg);
+}
+
+.contactame {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.form {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.footer-div {
+  position: absolute;
+  bottom: 0;
 }/*# sourceMappingURL=estilos.css.map */

@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -33,7 +35,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
-  height: 930px;
+  height: 100vh;
   width: 100%;
 }
 
@@ -178,7 +180,7 @@ ul {
 .img {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   height: 100px;
   filter: invert(100%);
 }
@@ -192,7 +194,7 @@ ul {
 .img2 {
   width: 100%;
   position: absolute;
-  top: 0;
+  top: -1px;
   height: 100px;
   transform: scaleY(-1);
   filter: invert(100%);
@@ -202,7 +204,7 @@ ul {
 .img3 {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   height: 100px;
   filter: invert(100%);
 }
@@ -210,7 +212,7 @@ ul {
 .img4 {
   width: 100%;
   position: absolute;
-  top: 0;
+  top: -1px;
   height: 100px;
   transform: scaleY(-1);
   filter: invert(100%);
@@ -219,7 +221,7 @@ ul {
 .img5 {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   height: 100px;
   filter: invert(100%);
 }
@@ -611,6 +613,7 @@ ul {
   height: 100px;
   line-height: 100px;
 }
+
 .loading-text span {
   display: inline-block;
   margin: 0 5px;
@@ -673,5 +676,139 @@ ul {
   }
   100% {
     filter: blur(4px);
+  }
+}
+@media (max-width: 1019px) {
+  #proyectos {
+    height: 1080px;
+  }
+
+  .contactame-redes {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.nav {
+  position: absolute;
+  opacity: 0;
+}
+
+@media (max-width: 880px) {
+  .header-nav {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .redes p {
+    font-size: 23px;
+  }
+
+  .nav {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .bar-btn {
+    font-size: 25px;
+    color: #fff;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    position: absolute;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+  }
+
+  .nav-menu li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .nav-menu li a.active, .nav-menu li a:hover {
+    color: #888;
+    transition: all 0.3s;
+  }
+
+  #check {
+    display: none;
+  }
+
+  #check:checked ~ .nav-menu {
+    height: 100vh;
+  }
+
+  #check:checked ~ .nav-menu li {
+    display: block;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .option {
+    position: absolute;
+    opacity: 0;
+  }
+}
+@media (max-width: 722px) {
+  #acercade {
+    height: 530px;
+  }
+}
+@media (max-width: 680px) {
+  #proyectos {
+    height: 1430px;
+  }
+}
+@media (max-width: 585px) {
+  #acercade {
+    height: 600px;
+  }
+
+  .redes p {
+    font-size: 20px;
+  }
+
+  .contactame {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .form input, textarea {
+    text-shadow: 0px 0px 2px #000;
+  }
+}
+@media (max-width: 521px) {
+  .redes p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 436px) {
+  #acercade {
+    height: 650px;
   }
 }/*# sourceMappingURL=estilos.css.map */

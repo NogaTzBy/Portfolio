@@ -276,68 +276,6 @@ ul {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-// .section-acercade {
-//     position: relative;
-
-// }
-
-// .section-acercade p {
-//     position: absolute;
-// }
-
-// .div-logos {
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     position: relative;
-//     align-items: center;
-//     filter: grayscale(30%);
-//     justify-content: space-evenly;
-// }
-
-// .logo-margin {
-//     width: 120px;
-//     height: 110px;
-//     background-size: cover;
-//     background-position: center;
-// }
-
-// .div-logo-1 {
-//     background-image: url(img/logo-html.png);
-// }
-// .div-logo-2 {
-//     background-image: url(img/logo-git.png);
-// }
-// .div-logo-3 {
-//     background-image: url(img/logo-css.png);
-// }
-// .div-logo-4 {
-//     background-image: url(img/logo-bs.png);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-// }
-// .div-logo-5 {
-//     background-image: url(img/logo-github.png);
-// }
-// .div-logo-6 {
-//     background-image: url(img/logo-sass.png);
-// }
-
-
-
-
-
 // PROYECTOS
 
 #proyectos {
@@ -609,12 +547,6 @@ ul {
     transition: border-bottom 1.3s;
 }
 
-
-
-
-
-
-
 //footer
 
 .footer {
@@ -638,50 +570,50 @@ ul {
 }
 
 
+// preloader
 
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
+@mixin position-center($text-align: center) {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: $text-align;
+}
 
-// @mixin position-center($text-align: center) {
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	margin: auto;
-// 	text-align: $text-align;
-// }
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 9999;
+}
 
-// .loading {
-// 	position: fixed;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 	background: #000;
-// 	z-index: 9999;
-// }
+.loading-text {
+	@include position-center;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	span {
+		display: inline-block;
+		margin: 0 5px;
+		color: #fff;
+        font-family: 'Quattrocento Sans', sans-serif;
+		@for $i from 0 through 7 {
+			&:nth-child(#{$i + 1}) {
+				filter: blur(0px);
+				animation: blur-text 1.5s (#{$i/5})+s infinite linear alternate;
+			}
+		}
+	}
+}
 
-// .loading-text {
-// 	@include position-center;
-// 	width: 100%;
-// 	height: 100px;
-// 	line-height: 100px;
-// 	span {
-// 		display: inline-block;
-// 		margin: 0 5px;
-// 		color: #fff;
-//     font-family: 'Quattrocento Sans', sans-serif;
-// 		@for $i from 0 through 6 {
-// 			&:nth-child(#{$i + 1}) {
-// 				filter: blur(0px);
-// 				animation: blur-text 1.5s (#{$i/5})+s infinite linear alternate;
-// 			}
-// 		}
-// 	}
-// }
-
-// @keyframes blur-text {
-// 	0% {filter: blur(0px);}
-// 	100% {filter: blur(4px);}
-// }
-
+@keyframes blur-text {
+	0% {filter: blur(0px);}
+	100% {filter: blur(4px);}
+}

@@ -488,10 +488,6 @@ ul {
   color: #888;
 }
 
-.insta-direct {
-  width: 50px;
-}
-
 .insta {
   background-image: url(img/redes-insta.svg);
 }
@@ -726,7 +722,7 @@ ul {
     width: 100%;
     height: 0vh;
     top: 100px;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(0, 0, 0, 0.85);
     text-align: center;
     transition: all 0.5s;
   }
@@ -777,6 +773,10 @@ ul {
   }
 }
 @media (max-width: 680px) {
+  .main {
+    height: 70vh;
+  }
+
   #proyectos {
     height: 1430px;
   }
@@ -795,7 +795,7 @@ ul {
   }
 
   .form {
-    width: 90%;
+    width: 95%;
   }
 
   .form input, textarea {
@@ -803,12 +803,37 @@ ul {
   }
 }
 @media (max-width: 521px) {
+  #contactame {
+    height: 140px;
+  }
+
+  .redes {
+    width: 60px;
+    height: 60px;
+  }
+
   .redes p {
     font-size: 15px;
+    top: 100px;
   }
 }
 @media (max-width: 436px) {
   #acercade {
     height: 650px;
+  }
+}
+@media (max-width: 396px) {
+  #contactame {
+    height: 110px;
+  }
+
+  .redes {
+    width: 50px;
+    height: 50px;
+  }
+
+  .redes p {
+    font-size: 13px;
+    top: 80px;
   }
 }/*# sourceMappingURL=estilos.css.map */

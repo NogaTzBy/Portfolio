@@ -711,7 +711,7 @@ ul {
   }
 
   .bar-btn {
-    font-size: 25px;
+    font-size: 35px;
     color: #fff;
     margin-left: 40px;
     cursor: pointer;
@@ -803,6 +803,10 @@ ul {
   }
 }
 @media (max-width: 521px) {
+  .acercade-iconos {
+    height: 50%;
+  }
+
   #contactame {
     height: 140px;
   }
@@ -822,7 +826,16 @@ ul {
     height: 650px;
   }
 }
+@media (max-width: 417px) {
+  #acercade {
+    height: 690px;
+  }
+}
 @media (max-width: 396px) {
+  #acercade {
+    height: 715px;
+  }
+
   #contactame {
     height: 110px;
   }
@@ -835,5 +848,10 @@ ul {
   .redes p {
     font-size: 13px;
     top: 80px;
+  }
+}
+@media (max-width: 347px) {
+  .acercade-iconos {
+    height: 60%;
   }
 }/*# sourceMappingURL=estilos.css.map */

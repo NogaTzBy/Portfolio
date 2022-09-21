@@ -10,11 +10,12 @@
 }
 
 body {
-  background: url(img/foto-hero.jpeg) #000;
+  background: url(img/foto-heroo2-modified2.jpg) #000;
   background-attachment: fixed;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 100vh;
   font-family: "Quattrocento Sans", sans-serif;
   z-index: -10;
 }
@@ -678,7 +679,6 @@ ul {
   #proyectos {
     height: 1080px;
   }
-
   .contactame-redes {
     display: flex;
     justify-content: space-around;
@@ -694,11 +694,9 @@ ul {
     position: absolute;
     opacity: 0;
   }
-
   .redes p {
     font-size: 23px;
   }
-
   .nav {
     position: -webkit-sticky;
     position: sticky;
@@ -709,14 +707,12 @@ ul {
     align-items: center;
     opacity: 1;
   }
-
   .bar-btn {
     font-size: 35px;
     color: #fff;
     margin-left: 40px;
     cursor: pointer;
   }
-
   .nav-menu {
     position: absolute;
     width: 100%;
@@ -726,42 +722,34 @@ ul {
     text-align: center;
     transition: all 0.5s;
   }
-
   .nav-menu li {
     display: none;
     line-height: 30px;
     margin: 50px 0;
     transition: all 0.5s;
   }
-
   .nav-menu li a {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
   }
-
   .nav-menu li a.active, .nav-menu li a:hover {
     color: #888;
     transition: all 0.3s;
   }
-
   #check {
     display: none;
   }
-
   #check:checked ~ .nav-menu {
     height: 100vh;
   }
-
   #check:checked ~ .nav-menu li {
     display: block;
   }
-
   .main {
     width: 100%;
   }
-
   .option {
     position: absolute;
     opacity: 0;
@@ -776,7 +764,6 @@ ul {
   .main {
     height: 70vh;
   }
-
   #proyectos {
     height: 1430px;
   }
@@ -785,19 +772,15 @@ ul {
   #acercade {
     height: 600px;
   }
-
   .redes p {
     font-size: 20px;
   }
-
   .contactame {
     background-color: rgba(0, 0, 0, 0.5);
   }
-
   .form {
     width: 95%;
   }
-
   .form input, textarea {
     text-shadow: 0px 0px 2px #000;
   }
@@ -806,16 +789,13 @@ ul {
   .acercade-iconos {
     height: 50%;
   }
-
   #contactame {
     height: 140px;
   }
-
   .redes {
     width: 60px;
     height: 60px;
   }
-
   .redes p {
     font-size: 15px;
     top: 100px;
@@ -835,16 +815,13 @@ ul {
   #acercade {
     height: 715px;
   }
-
   #contactame {
     height: 110px;
   }
-
   .redes {
     width: 50px;
     height: 50px;
   }
-
   .redes p {
     font-size: 13px;
     top: 80px;
